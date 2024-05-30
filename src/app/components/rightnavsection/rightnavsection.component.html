@@ -5,16 +5,17 @@
     }
     section{
       position: fixed;
-      min-height: 600px;
+      min-height: -webkit-fill-available;
       min-width: 300px;
-      top: 100px;
-      right: 50px;
+      right: 0px;
       font-size: 14px;
       font-weight: bold;
     }
 </style>
 
 
-<section class="card shadow bg-white d-none d-lg-block">
-
+<section class="card shadow bg-white d-none d-lg-block p-2">
+  <div  *ngFor="let navItem of nav_list">
+      <p class="text-secondary">{{navItem.name}}</p>
+  </div>
 </section>

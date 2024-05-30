@@ -8,11 +8,12 @@ import { AlliancePartnerComponent } from './pages/developer/alliance-partner/all
 import { SwitchingComponent } from './pages/developer/switching/switching.component';
 import { TransactionComponent } from './pages/developer/transaction/transaction.component';
 import { SelfserviceComponent } from './pages/developer/selfservice/selfservice.component';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, SidenavComponent, RightnavsectionComponent, TopnavComponent, QuickstartComponent, AlliancePartnerComponent, SwitchingComponent, TransactionComponent, SelfserviceComponent],
+  imports: [RouterOutlet, SidenavComponent, RightnavsectionComponent, TopnavComponent, QuickstartComponent, AlliancePartnerComponent, SwitchingComponent, TransactionComponent, SelfserviceComponent, CommonModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
