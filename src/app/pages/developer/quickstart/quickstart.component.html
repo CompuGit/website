@@ -1,0 +1,88 @@
+<style>
+    main{
+        position:relative;
+        left:100px;
+        width: calc(-webkit-fill-available - 300px);
+        padding: 24px 32px;
+    }
+
+    pre{
+        padding:16px;
+        font-weight: bold;
+        font-size:16px;
+        border: 1px solid grey;
+        border-radius: 10px;
+    }
+</style>
+
+<main class="container">
+    <h1>Quickstart</h1>
+    <br/>
+    <h4>Get Started</h4>
+    <p>The Toucan provides a sandbox environment which can be utilized to test your awesome creation before taking them Live. Toucan APIs are HTTP-based Restful API that use JWT token-based authentication. All APIs are stateless; both request and response are in JSON format.</p>
+    <p>While some Toucan features do not apply to the sandbox, such as issuing merchant statements etc, the sandbox has the same Toucan API feature set as the live environment. When a transaction is tested through a sandbox account, a mock transaction is created that behaves exactly like a transaction in the live environment and therefore using Toucan API calls, you can test and debug your apps without referencing any real or live Toucan data.</p>
+    <br/>
+
+    <h4>Sandbox</h4>
+    <p>URL: <a href="https://sandbox.toucanus.com">https://sandbox.toucanus.com</a></p>
+
+    <p>You will need a JWT token (also referred as API Key) before any API can be successfully executed on Toucan Sandbox. Please use the provided Contact form on this website to request generation of test tokens. All generated tokens will have a six-month year expiry.</p>
+
+    <p>Toucan sandbox and live only supports https POST for all API methods, Message structure is detailed in below section, incoming message need to confirm to provide json specification of messages.</p>
+
+    <p>It is better practise to test any change in sandbox environment before feature is is made live in production environment. </p>
+
+    <p>Browse through the toucan API guide for request and response message structure, checkout FAQ section and still you have query or suggestions we would love to receive an email at support&#64;toucanus.com</p>
+    <br/>
+
+    <h4>Run in Postman button</h4>
+    <p>The quicker you can get users started, the better. One way to jumpstart the configuration of an API is by using Run in Postman buttons. This can reduce more lengthy and tedious explanations about parameters and other configurations for an API.</p>
+
+    <br/>
+    <h4>Authentication</h4>
+    <p>You will receive a token (API keys) via email to authenticate requests. Each token is valid only for a specific time frame generally six months. In case you lose them or need a fresh token please use contact form to generate.</p>
+    <p>Provided keys are for sandbox environments and once testing is completed you can receive production keys before go-live.</p>
+    <p>Use provided token as part of https header using key as “X-API-Key” and value as provided token.</p>
+
+    <pre>
+        POST /api/user/inq HTTP/2
+
+        Host: sandbox.toucanus.net
+
+        Accept: application/json, text/plain, */*
+
+        Content-Type: application/json; charset=utf-8
+
+        X-API-Key: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJnYXV0YW1AdG91Y2FuIiwiaWF0IjoxNjI2MDk3NzcxLCJle
+        HAiOjE2MjYxMDQ5NzF9.xijHvprs07UqC_wPajAqaL1aRkB3TAUBBp67atP0AFQ
+
+        Content-Length: 83
+
+        Origin: https://sandbox.toucanus.net
+
+        DNT: 1
+
+        Connection: keep-alive
+
+        Referer: https://sandbox.toucanus.net/
+
+        TE: Trailers
+    </pre>
+
+    <h4>Message Structure</h4>
+    <p>Toucan used REST based HTTP POST message structure with http header and http data. HTTP Data include header and payload structure as described below</p>
+
+    <h5>HTTP Request header</h5>
+    <pre>
+        Authorization use X-API-Key tag for authentication
+
+        Content Type application/json
+
+        Request Method POST
+    </pre>
+
+    <h5>HTTP Request Data Structure</h5>
+
+</main>
+
+<app-rightnavsection></app-rightnavsection>
