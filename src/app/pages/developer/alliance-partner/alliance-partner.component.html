@@ -1,144 +1,111 @@
 <style>
-    main{
-        position:relative;
-        width: calc(100% - 300px);
-        padding: 24px 32px;
-    }
-
-    pre{
-        padding:16px;
+    .pre {
+        padding: 16px;
         font-weight: bold;
-        font-size:16px;
+        font-size: 16px;
         border: 1px solid grey;
         border-radius: 10px;
     }
 </style>
 
-<div class="container-fluid d-flex">
-<main class="container">
-    <h1>Aliance Partner</h1>
-    <br/>
-    <h4>Application Submit Request</h4>
-    <pre>
-        API URL
+<div class="d-flex">
+    <app-main >
+        <div>
+            <h1>Alliance Partners</h1>
+            <br />
 
-        api/allp/application/submit
+            <!-- <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Application Submit Request</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Merchant Inquiry</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Onboarding Login Request</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Service Request creation</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Service Request Inquiry</a>
+                </li>
+            </ul> -->
 
-        HTTP Method
+            <app-tabs [nav_tabs]="nav_tabs"></app-tabs>
+            <br/>
+            <div>
+                <h4>Application Submit Request</h4>
 
-        POST
+                <table class="table border ">
+                    <tbody>
+                        <tr>
+                            <th>API URL</th>
+                            <td>api/allp/application/submit </td>
+                        </tr>
+                        <tr>
+                            <th>HTTP Method</th>
+                            <td>POST</td>
+                        </tr>
+                        <tr>
+                            <th>REQ/RES TYPE</th>
+                            <td>Application/JSON</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-        REQ/RES TYPE
+                <table class="table border">
+                    <thead class="thead-light">
+                        <tr>
+                            <th scope="col">Field name</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Data type</th>
+                            <th scope="col">Mandatory</th>
+                            <th scope="col">Length</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Message ID</td>
+                            <td>Message ID for application submit request</td>
+                            <td>String</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Object</td>
+                            <td>Object content</td>
+                            <td>–</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Application status</td>
+                            <td>Specifies the application status “SUBMITTED”</td>
+                            <td>Enum</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>ID</td>
+                            <td>Specifies the request ID</td>
+                            <td>String</td>
+                            <td>Y</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Request type</td>
+                            <td>CREATE (Fixed value)</td>
+                            <td>String</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
-        Application/JSON
-    </pre>
-    <br/>
-
-    <table class="table table-striped">
-        <thead class="thead-light">
-            <tr>
-                <th scope="col">Field name</th>
-                <th scope="col">Description</th>
-                <th scope="col">Data type</th>
-                <th scope="col">Mandatory</th>
-                <th scope="col">Length</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>
-                    <p>Message ID</p>
-                </td>
-                <td>
-                    <p>Message ID for application submit request</p>
-                </td>
-                <td>
-                    <p>String</p>
-                </td>
-                <td>
-                    <p>&nbsp;</p>
-                </td>
-                <td>
-                    <p>&nbsp;</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>Object</p>
-                </td>
-                <td>
-                    <p>Object content</p>
-                </td>
-                <td>
-                    <p>–</p>
-                </td>
-                <td>
-                    <p>&nbsp;</p>
-                </td>
-                <td>
-                    <p>&nbsp;</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>Application status</p>
-                </td>
-                <td>
-                    <p>Specifies the application status “SUBMITTED”</p>
-                </td>
-                <td>
-                    <p>Enum</p>
-                </td>
-                <td>
-                    <p>&nbsp;</p>
-                </td>
-                <td>
-                    <p>&nbsp;</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>ID</p>
-                </td>
-                <td>
-                    <p>Specifies the request ID</p>
-                </td>
-                <td>
-                    <p>String</p>
-                </td>
-                <td>
-                    <p>Y</p>
-                </td>
-                <td>
-                    <p>&nbsp;</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>Request type</p>
-                </td>
-                <td>
-                    <p>CREATE (Fixed value)</p>
-                </td>
-                <td>
-                    <p>String</p>
-                </td>
-                <td>
-                    <p>&nbsp;</p>
-                </td>
-                <td>
-                    <p>&nbsp;</p>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <br/><br/>
-
-    <h4>Merchant Inquiry</h4>
-    <p>This API can be used by the Alliance Partner/Aggregator to inquire a merchant under it using the unique Merchant ID assigned to it. Response will give all the details of that merchant.</p>
-
-</main>
-<div >
-    <app-rightnavsection [nav_list] = 'nav_list'></app-rightnavsection>
-</div>
+        </div>
+    </app-main>
+    <div style="min-width: 250px;"></div>
+    <!-- <app-rightnavsection [nav_list]="nav_list"></app-rightnavsection> -->
 </div>

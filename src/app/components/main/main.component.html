@@ -1,20 +1,14 @@
 <style>
     main {
         position: relative;
-        width: calc(100% - 300px);
+        /* width: calc(100% - 300px);  */
         padding: 24px 32px;
-    }
-
-    pre {
-        padding: 16px;
-        font-weight: bold;
-        font-size: 16px;
-        border: 1px solid grey;
-        border-radius: 10px;
+        /* right:300px; */
     }
 </style>
 
-    <main class="container">
+<main class="container-fluid d-flex justify-content-center bg-white">
+    <div class="p-5 pt-3">
         <ng-content></ng-content>
-        <app-rightnavsection [nav_list]="nav_list"></app-rightnavsection>
-    </main>
+    </div>
+</main>

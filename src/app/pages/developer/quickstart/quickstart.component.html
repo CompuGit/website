@@ -1,11 +1,5 @@
 <style>
-    main {
-        position: relative;
-        width: calc(100% - 300px);
-        padding: 24px 32px;
-    }
-
-    pre {
+    .pre {
         padding: 16px;
         font-weight: bold;
         font-size: 16px;
@@ -14,7 +8,7 @@
     }
 </style>
 
-
+<div class="d-flex">
     <app-main [nav_list]='nav_list'>
         <div>
             <h1>Quickstart</h1>
@@ -68,45 +62,39 @@
                 before go-live.</p>
             <p>Use provided token as part of https header using key as “X-API-Key” and value as provided token.</p>
 
-            <pre>
-                POST /api/user/inq HTTP/2
-    
-                Host: sandbox.toucanus.net
-    
-                Accept: application/json, text/plain, */*
-    
-                Content-Type: application/json; charset=utf-8
-    
-                X-API-Key: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJnYXV0YW1AdG91Y2FuIiwiaWF0IjoxNjI2MDk3NzcxLCJle
-                HAiOjE2MjYxMDQ5NzF9.xijHvprs07UqC_wPajAqaL1aRkB3TAUBBp67atP0AFQ
-    
-                Content-Length: 83
-    
-                Origin: https://sandbox.toucanus.net
-    
-                DNT: 1
-    
-                Connection: keep-alive
-    
-                Referer: https://sandbox.toucanus.net/
-    
-                TE: Trailers
-            </pre>
+            <div class="pre">
+                <p>POST /api/user/inq HTTP/2</p>
+                <p>Host: sandbox.toucanus.net</p>
+                <p>Accept: application/json, text/plain, */*</p>
+                <p>Content-Type: application/json; charset=utf-8</p>
+                <p>X-API-Key: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJnYXV0YW1AdG91Y2FuIiwiaWF0IjoxNjI2MDk3NzcxLCJle
+                    HAiOjE2MjYxMDQ5NzF9.xijHvprs07UqC_wPajAqaL1aRkB3TAUBBp67atP0AFQ</p>
+                <p>Content-Length: 83</p>
+                <p>Origin: https://sandbox.toucanus.net</p>
+                <p>DNT: 1</p>
+                <p>Connection: keep-alive</p>
+                <p>Referer: https://sandbox.toucanus.net/</p>
+                <p>TE: Trailers</p>
+            </div>
+
+            <br /> <br />
 
             <h4>Message Structure</h4>
             <p>Toucan used REST based HTTP POST message structure with http header and http data. HTTP Data include
-                header
-                and payload structure as described below</p>
+                header and payload structure as described below</p>
 
+            <br />
             <h5>HTTP Request header</h5>
-            <pre>
-                Authorization use X-API-Key tag for authentication
-    
-                Content Type application/json
-    
-                Request Method POST
-            </pre>
+            <div class="pre">
+                <p>Authorization use X-API-Key tag for authentication</p>
+                <p>Content Type application/json</p>
+                <p>Request Method POST</p>
+            </div>
+            <br />
 
             <h5>HTTP Request Data Structure</h5>
         </div>
     </app-main>
+    <div style="min-width: 250px;"></div>
+    <app-rightnavsection [nav_list]="nav_list"></app-rightnavsection>
+</div>
