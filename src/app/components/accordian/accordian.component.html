@@ -1,0 +1,243 @@
+<style>
+    .accordion-item {
+        border: none;
+    }
+
+    .accordion-button {
+        color: lightgray;
+    }
+
+    .accordion-button::after {
+        background-image: none;
+    }
+
+    .accordion-button:not(.collapsed) {
+        background-color: transparent;
+        color: #333;
+        border-bottom: 1px solid lightgray;
+    }
+
+    .accordion-button:focus {
+        box-shadow: none;
+    }
+</style>
+
+<div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                Application Submit Request
+            </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <p>This API can be used by the Alliance Partner/Aggregator to inquire a merchant 
+                    under it using the unique Merchant ID assigned to it. Response will give all 
+                    the details of that merchant.</p>
+                <div>
+                    <table class="table border ">
+                        <tbody>
+                            <tr>
+                                <th>API URL</th>
+                                <td>api/allp/application/submit </td>
+                            </tr>
+                            <tr>
+                                <th>HTTP Method</th>
+                                <td>POST</td>
+                            </tr>
+                            <tr>
+                                <th>REQ/RES TYPE</th>
+                                <td>Application/JSON</td>
+                            </tr>
+                        </tbody>
+                    </table>
+    
+                    <table class="table border">
+                        <thead class="thead-light">
+                            <tr>
+                                <th scope="col">Field name</th>
+                                <th scope="col">Description</th>
+                                <th scope="col">Data type</th>
+                                <th scope="col">Mandatory</th>
+                                <th scope="col">Length</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Message ID</td>
+                                <td>Message ID for application submit request</td>
+                                <td>String</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Object</td>
+                                <td>Object content</td>
+                                <td>–</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Application status</td>
+                                <td>Specifies the application status “SUBMITTED”</td>
+                                <td>Enum</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>ID</td>
+                                <td>Specifies the request ID</td>
+                                <td>String</td>
+                                <td>Y</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Request type</td>
+                                <td>CREATE (Fixed value)</td>
+                                <td>String</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Merchant Inquiry
+            </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <p>This API can be used by the Alliance Partner/Aggregator to inquire a merchant 
+                under it using the unique Merchant ID assigned to it. Response will give all 
+                the details of that merchant.</p>
+                <br/>
+
+                <div>
+                    <table class="table border ">
+                        <tbody>
+                            <tr>
+                                <th>API URL</th>
+                                <td>api/allp/application/submit </td>
+                            </tr>
+                            <tr>
+                                <th>HTTP Method</th>
+                                <td>POST</td>
+                            </tr>
+                            <tr>
+                                <th>REQ/RES TYPE</th>
+                                <td>Application/JSON</td>
+                            </tr>
+                        </tbody>
+                    </table>
+    
+                    <table class="table border">
+                        <thead class="thead-light">
+                            <tr>
+                                <th scope="col">Field name</th>
+                                <th scope="col">Description</th>
+                                <th scope="col">Data type</th>
+                                <th scope="col">Mandatory</th>
+                                <th scope="col">Length</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Message ID</td>
+                                <td>Message ID for application submit request</td>
+                                <td>String</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Object</td>
+                                <td>Object content</td>
+                                <td>–</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Application status</td>
+                                <td>Specifies the application status “SUBMITTED”</td>
+                                <td>Enum</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>ID</td>
+                                <td>Specifies the request ID</td>
+                                <td>String</td>
+                                <td>Y</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Request type</td>
+                                <td>CREATE (Fixed value)</td>
+                                <td>String</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>                
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Onboarding Login Request
+            </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
+                plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
+                within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Service Request creation
+            </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
+                plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
+                within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                Operating time Inquiry Request
+            </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin
+                adds the appropriate classes that we use to style each element. These classes control the overall
+                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
+                CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
+                <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+        </div>
+    </div>
+</div>
