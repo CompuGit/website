@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
-import { RightnavsectionComponent } from '../rightnavsection/rightnavsection.component';
 import { Input } from '@angular/core';
 
 @Component({
   selector: 'app-main',
   standalone: true,
-  imports: [RightnavsectionComponent],
+  imports: [],
   templateUrl: './main.component.html',
   styleUrl: './main.component.css'
 })

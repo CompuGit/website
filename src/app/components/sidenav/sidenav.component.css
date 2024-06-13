@@ -1,0 +1,11 @@
+.icon{
+    display:flex;
+  flex-direction: column;
+}
+aside{
+  position: fixed;
+  height: -webkit-fill-available;
+  width: 100px;
+  font-size: 10px;
+  font-weight: bold;
+}

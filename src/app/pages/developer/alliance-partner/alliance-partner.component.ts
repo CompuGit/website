@@ -1,12 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { MainComponent } from '../../../components/main/main.component';
-import { RightnavsectionComponent } from '../../../components/rightnavsection/rightnavsection.component';
-import { TabsComponent } from '../../../components/tabs/tabs.component';
+
 import { AccordianComponent } from '../../../components/accordian/accordian.component';
 @Component({
   selector: 'app-alliance-partner',
   standalone: true,
-  imports: [MainComponent,RightnavsectionComponent, TabsComponent, AccordianComponent],
+  imports: [MainComponent, AccordianComponent],
   templateUrl: './alliance-partner.component.html',
   styleUrl: './alliance-partner.component.css'
 })
