@@ -2,5 +2,5 @@
         <div class="content">
                 <ng-content></ng-content>
         </div>
-        <app-on-page-navigation [anchors]="anchors"></app-on-page-navigation>
+        <app-on-page-navigation [anchors]="anchors" *ngIf="hasOnPageAnchors"></app-on-page-navigation>
 </main>

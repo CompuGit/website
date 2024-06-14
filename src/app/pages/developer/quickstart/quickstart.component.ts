@@ -12,7 +12,7 @@ import { OnPageNavigationComponent } from '../../../components/on-page-navigatio
 })
 
 export class QuickstartComponent {
-
+  hasOnPageAnchors = true;
   anchors = [
     {
       name: "Get Started",

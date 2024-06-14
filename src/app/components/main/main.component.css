@@ -2,11 +2,12 @@ main .content {
     position: sticky;
     width: -webkit-fill-available;
     padding: 56px 40px;
+    top:58px;
 }
 
 @media screen and (min-width: 1200px) {
     main .content {
-        width: min(100% - 240px, 768px);
+        width: min(100% - 300px, 768px);
         padding-left: 24px;
     }
 }

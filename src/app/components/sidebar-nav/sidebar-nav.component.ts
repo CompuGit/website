@@ -35,7 +35,8 @@ export class SidebarNavComponent {
       { name: "Qr Codes", href: "/developer/quickstart" },
       { name: "Documents", href: "/developer/quickstart" },
       { name: "Customers", href: "/developer/quickstart" },
-      { name: "Qr Codes", href: "/developer/quickstart" }
+      { name: "Qr Codes", href: "/developer/quickstart" },
+      { name: "Poorna", href: "/developer/quickstart" }
     ],
     "Orders": [
       { name: "Orders", href: "/developer/quickstart" },
