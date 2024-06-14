@@ -1,0 +1,73 @@
+.sidebar {
+    max-width: 200px;
+    min-width: 200px;
+    border-right: 1px solid rgba(120, 134, 155, 0.18);
+    position: sticky; 
+    top: 0px;
+    margin: 0px;
+    height: calc(-68px + 100vh);
+    -webkit-box-pack: start;
+}
+
+.sidebar .box {
+    padding: 8px;
+    padding-top: 32px;
+    height: calc(-61px + 100vh);
+    overflow-y: auto;
+    top: 61px;
+}
+.sidebar .box .nav_title {
+    align-items: center;
+    padding: 0px 8px;
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+.sidebar .box ul{
+    list-style: none;
+    margin: 0px;
+    padding: 8px 8px 8px 24px;
+}
+.sidebar .box ul li div{
+  margin: 0px;
+  padding: 8px;
+}
+.sidebar .box ul li :hover{
+  background-color: #e8edf3;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.sidebar .box a{
+  text-decoration: none;
+  font-size: 14px;
+  color: #2f3f86;
+}
+
+@media (max-width: 989px) {
+    .sidebar {
+        display: none;
+    }
+}
+
+/* scroll bar styles */
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #c8d6e7; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #42517e; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #1f154d; 
+  }

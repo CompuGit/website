@@ -1,16 +1,48 @@
 import { Component} from '@angular/core';
 import { MainComponent } from '../../../components/main/main.component';
 import { CodeHighlightComponent } from '../../../components/code-highlight/code-highlight.component';
+import { OnPageNavigationComponent } from '../../../components/on-page-navigation/on-page-navigation.component';
 
 @Component({
   selector: 'app-quickstart',
   standalone: true,
-  imports: [MainComponent, CodeHighlightComponent],
+  imports: [MainComponent, CodeHighlightComponent, OnPageNavigationComponent],
   templateUrl: './quickstart.component.html',
   styleUrl: './quickstart.component.scss'
 })
 
 export class QuickstartComponent {
+
+  anchors = [
+    {
+      name: "Get Started",
+      href: "/developer/quickstart#get_started"
+    },
+    {
+      name: "Sandbox",
+      href: "/developer/quickstart#sandbox"
+    },
+    {
+      name: "Run In Postman",
+      href: "/developer/quickstart#run_in_postman"
+    },
+    {
+      name: "Authentication",
+      href: "/developer/quickstart#authentication"
+    },
+    {
+      name: "Message Structure",
+      href: "/developer/quickstart#message_structure"
+    },
+    {
+      name: "Http Request Header",
+      href: "/developer/quickstart#http_req_header"
+    },
+    {
+      name: "Http Request Data Structure",
+      href: "/developer/quickstart#http_req"
+    },
+  ];
 
 
   auth_http = `POST /api/user/inq HTTP/2
@@ -21,7 +53,7 @@ Accept: application/json, text/plain, */*
 
 Content-Type: application/json; charset=utf-8
 
-X-API-Key: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJnYXV0YW1AdG91Y2FuIiwiaWF0IjoxNjI2MDk3NzcxLCJle HAiOjE2MjYxMDQ5NzF9.xijHvprs07UqC_wPajAqaL1aRkB3TAUBBp67atP0AFQ
+X-API-Key: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJnYXV0YW1AdG91Y2FuIiwiaWF0IjoxNjI2MDk3NzcxLCJle
 
 Content-Length: 83
 

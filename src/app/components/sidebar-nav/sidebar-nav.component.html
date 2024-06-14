@@ -1,0 +1,110 @@
+<div class="sidebar">
+    <!-- <div class="box">
+        <div class="nav_title">
+            <p>Payments</p>
+        </div>
+        <div class="nav_item">
+            <a target="_self" href="/developer/quickstart">
+                <p >API Reference Guide</p>
+            </a>
+        </div>
+        <div class="nav_item">
+            <a target="_self" href="/developer/quickstart">
+                <p >API Reference Guide</p>
+            </a>
+        </div>
+        <div class="nav_item">
+            <a target="_self" href="/developer/quickstart">
+                <p >API Reference Guide</p>
+            </a>
+        </div>
+        <div class="nav_item">
+            <a target="_self" href="/developer/quickstart">
+                <p >API Reference Guide</p>
+            </a>
+        </div>
+        <div class="nav_item">
+            <a target="_self" href="/developer/quickstart">
+                <p >API Reference Guide</p>
+            </a>
+        </div>
+        <div class="nav_item">
+            <a target="_self" href="/developer/quickstart">
+                <p >API Reference Guide</p>
+            </a>
+        </div>
+        <div class="nav_item">
+            <a target="_self" href="/developer/quickstart">
+                <p >API Reference Guide</p>
+            </a>
+        </div>
+        <div class="nav_item">
+            <a target="_self" href="/developer/quickstart">
+                <p >API Reference Guide</p>
+            </a>
+        </div>
+        <div class="nav_item">
+            <a target="_self" href="/developer/quickstart">
+                <p >API Reference Guide</p>
+            </a>
+        </div>
+        <div class="nav_item">
+            <a target="_self" href="/developer/quickstart">
+                <p >API Reference Guide</p>
+            </a>
+        </div>
+        <div class="nav_item">
+            <a target="_self" href="/developer/quickstart">
+                <p >API Reference Guide</p>
+            </a>
+        </div>
+        <div class="nav_item">
+            <a target="_self" href="/developer/quickstart">
+                <p >API Reference Guide</p>
+            </a>
+        </div>
+        <div class="nav_item">
+            <a target="_self" href="/developer/quickstart">
+                <p >API Reference Guide</p>
+            </a>
+        </div>
+        <div class="nav_item">
+            <a target="_self" href="/developer/quickstart">
+                <p >API Reference Guide</p>
+            </a>
+        </div>
+        <div class="nav_item">
+            <a target="_self" href="/developer/quickstart">
+                <p >API Reference Guide</p>
+            </a>
+        </div>
+        <div class="nav_item">
+            <a target="_self" href="/developer/quickstart">
+                <p >API Reference Guide</p>
+            </a>
+        </div>
+        <div class="nav_item">
+            <a target="_self" href="/developer/quickstart">
+                <p >API Reference Guide</p>
+            </a>
+        </div>
+        <div class="nav_item">
+            <a target="_self" href="/developer/quickstart">
+                <p >API Reference Guide</p>
+            </a>
+        </div>
+
+    </div> -->
+    <div class="box">
+        <div *ngFor="let key of categories">
+            <div class="nav_title">{{key}}</div>
+            <ul>
+                <li *ngFor="let anchor of links[key]">
+                    <div><a target="_self" [href]="anchor.href">
+                        {{ anchor.name }}
+                    </a></div>
+                </li>
+            </ul>
+        </div>
+    </div>     
+</div>

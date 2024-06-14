@@ -1,0 +1,19 @@
+<div class="outer-box">
+    <p>ON THIS PAGE</p>
+    <div class="inner-box">
+        <ul *ngFor="let anchor of anchors">
+            <li>
+                <a target="_self" href="{{anchor.href}}">
+                    {{anchor.name}}
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="back-to-top">
+        <a target="_self" href="/developer/quickstart#target_top">
+            <p title="Back to Top">
+                <i class="bi bi-arrow-up-square-fill fs-1"></i>
+            </p>
+        </a>
+    </div>
+</div>

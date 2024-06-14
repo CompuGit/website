@@ -9,27 +9,20 @@ import { SwitchingComponent } from './pages/developer/switching/switching.compon
 import { TransactionComponent } from './pages/developer/transaction/transaction.component';
 import { SelfserviceComponent } from './pages/developer/selfservice/selfservice.component';
 import { CodeHighlightComponent } from './components/code-highlight/code-highlight.component';
+import { OnPageNavigationComponent } from './components/on-page-navigation/on-page-navigation.component';
+import { SidebarNavComponent } from './components/sidebar-nav/sidebar-nav.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, SidenavComponent, 
+  imports: [RouterOutlet, SidenavComponent, OnPageNavigationComponent,
     TopnavComponent, QuickstartComponent, AlliancePartnerComponent, 
     SwitchingComponent, TransactionComponent, SelfserviceComponent, 
-    CommonModule, CodeHighlightComponent],
+    CommonModule, CodeHighlightComponent, SidebarNavComponent],
 
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-// @NgModule({
-//   declarations: [
-//     JsonCodeSinppetComponent
-//   ],
-//   imports: [RouterOutlet, SidenavComponent, RightnavsectionComponent, 
-//     TopnavComponent, QuickstartComponent, AlliancePartnerComponent, 
-//     SwitchingComponent, TransactionComponent, SelfserviceComponent, 
-//     CommonModule],
-// })
 export class AppComponent {
   title = 'website';
 }

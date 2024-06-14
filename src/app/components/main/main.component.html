@@ -1,14 +1,6 @@
-<style>
-    main {
-        position: relative;
-        width: -webkit-fill-available;
-        padding: 24px 32px;
-        /* right:300px; */
-    }
-</style>
-
-<main class="container-fluid d-flex justify-content-center bg-white">
-    <div class="p-5 pt-3">
-        <ng-content></ng-content>
-    </div>
+<main class="d-flex justify-content-center bg-white">
+        <div class="content">
+                <ng-content></ng-content>
+        </div>
+        <app-on-page-navigation [anchors]="anchors"></app-on-page-navigation>
 </main>
