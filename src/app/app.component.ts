@@ -1,7 +1,6 @@
 import { Component, NgModule } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { TopnavComponent } from './components/topnav/topnav.component';
 import { QuickstartComponent } from './pages/developer/quickstart/quickstart.component';
 import { AlliancePartnerComponent } from './pages/developer/alliance-partner/alliance-partner.component';
@@ -15,7 +14,7 @@ import { SidebarNavComponent } from './components/sidebar-nav/sidebar-nav.compon
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, SidenavComponent, OnPageNavigationComponent,
+  imports: [RouterOutlet, OnPageNavigationComponent,
     TopnavComponent, QuickstartComponent, AlliancePartnerComponent, 
     SwitchingComponent, TransactionComponent, SelfserviceComponent, 
     CommonModule, CodeHighlightComponent, SidebarNavComponent],

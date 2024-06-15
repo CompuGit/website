@@ -1,13 +1,17 @@
 main .content {
-    position: sticky;
+    position: relative;
     width: -webkit-fill-available;
     padding: 56px 40px;
-    top:58px;
+    top:60px;
 }
 
 @media screen and (min-width: 1200px) {
-    main .content {
+    main .content.min-width {
         width: min(100% - 300px, 768px);
+        padding-left: 24px;
+    }
+    main .content.max-width {
+        width: min(100% - 300px, 1068px);
         padding-left: 24px;
     }
 }

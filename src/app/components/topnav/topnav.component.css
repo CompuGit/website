@@ -1,12 +1,77 @@
-.logo_title{
-    /* background-image: url('./assets/toucan_title.png'); */
-    background-size: contain;
-    background-repeat: no-repeat;
-    min-height:60px;
-    min-width: 190px;
-    position: relative;
-    left: 30px;
+nav {
+    box-sizing: border-box;
+    display: block;
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+    flex: 0 1 auto;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+    border-bottom: 1px solid #c8d6e7;
+    min-height: 60px;
 }
-.fixed-top{
-    position:sticky;
+
+nav .topbar {
+    padding: 0px 24px;
+    height: inherit;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .topbar .logo_search {
+    display: flex;
+    align-items: center;
+}
+
+nav .topbar .logo_search .search-box {
+    border: 1px solid #c8d6e7;
+    border-radius: 5px;
+    padding: 2px 8px;
+    display: flex;
+    background-color: #fafcfd;
+    color: #2f3f86;
+}
+
+nav .topbar .logo_search input {
+    border: none;
+    margin-left: 5px;
+    background-color: transparent;
+    width: 300px;
+}
+
+nav .topbar .logo_search input:focus {
+    outline: none;
+}
+
+.slash {
+    padding: 4px;
+    background-color: #ebf2f5;
+}
+
+nav .topbar .navs_buttons {
+    display: flex;
+    align-items: center;
+    color: #2f3f86;
+}
+
+nav .topbar .navs_buttons .item {
+    padding: 4px 16px;
+    text-decoration: none;
+    color: #2f3f86;
+}
+
+nav .topbar .navs_buttons .item.active {
+
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+nav .topbar .navs_buttons .item.singup {
+    background-color: #2f3f86;
+    color: white;
+    box-sizing: border-box;
+    border-radius: 5px;
 }

@@ -1,5 +1,5 @@
-<main class="d-flex justify-content-center bg-white">
-        <div class="content">
+<main class="d-flex justify-content-center">
+        <div [ngClass]="hasOnPageAnchors == true ? 'content min-width': 'content max-width'">
                 <ng-content></ng-content>
         </div>
         <app-on-page-navigation [anchors]="anchors" *ngIf="hasOnPageAnchors"></app-on-page-navigation>
