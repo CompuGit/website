@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { NgFor } from '@angular/common';
-import { ActivatedRouteSnapshot } from '@angular/router';
 
 interface Anchor {
   name: string;
@@ -24,34 +23,33 @@ interface Links {
 export class SidebarNavComponent {
   links:Links = {
     "Payments": [
-      { name: "Orders", href: "/developer/quickstart" },
-      { name: "Payments", href: "/developer/quickstart" },
-      { name: "Downtime", href: "/developer/quickstart" },
-      { name: "Settlements", href: "/developer/quickstart" },
-      { name: "Refunds", href: "/developer/quickstart" },
-      { name: "Disputes", href: "/developer/quickstart" },
-      { name: "Documents", href: "/developer/quickstart" },
-      { name: "Customers", href: "/developer/quickstart" },
-      { name: "Qr Codes", href: "/developer/quickstart" },
-      { name: "Documents", href: "/developer/quickstart" },
-      { name: "Customers", href: "/developer/quickstart" },
-      { name: "Qr Codes", href: "/developer/quickstart" },
-      { name: "Poorna", href: "/developer/quickstart" }
+      { name: "Link 1", href: "" },
+      { name: "Link 2", href: "" },
+      { name: "Link 3", href: "" },
+      { name: "Link 4", href: "" },
+      { name: "Link 5", href: "" },
+      { name: "Link 6", href: "" },
+      { name: "Link 7", href: "" },
+      { name: "Link 8", href: "" },
+      { name: "Link 9", href: "" },
+      { name: "Link 10", href: "" },
+      { name: "Link 11", href: "" },
+      { name: "Link 12", href: "" },
     ],
     "Orders": [
       { name: "Orders", href: "/developer/quickstart" },
-      { name: "Payments", href: "/developer/quickstart" },
-      { name: "Downtime", href: "/developer/quickstart" },
-      { name: "Settlements", href: "/developer/quickstart" },
-      { name: "Refunds", href: "/developer/quickstart" },
-      { name: "Disputes", href: "/developer/quickstart" },
-      { name: "Documents", href: "/developer/quickstart" },
-      { name: "Customers", href: "/developer/quickstart" },
-      { name: "Qr Codes", href: "/developer/quickstart" },
-      { name: "Disputes", href: "/developer/quickstart" },
-      { name: "Documents", href: "/developer/quickstart" },
-      { name: "Customers", href: "/developer/quickstart" },
-      { name: "Qr Codes", href: "/developer/quickstart" }
+      { name: "Link 1", href: "" },
+      { name: "Link 2", href: "" },
+      { name: "Link 3", href: "" },
+      { name: "Link 4", href: "" },
+      { name: "Link 5", href: "" },
+      { name: "Link 6", href: "" },
+      { name: "Link 7", href: "" },
+      { name: "Link 8", href: "" },
+      { name: "Link 9", href: "" },
+      { name: "Link 10", href: "" },
+      { name: "Link 11", href: "" },
+      { name: "Link 12", href: "" },
     ]
   };
 

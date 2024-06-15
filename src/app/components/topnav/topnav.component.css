@@ -58,12 +58,13 @@ nav .topbar .navs_buttons {
 
 nav .topbar .navs_buttons .item {
     padding: 4px 16px;
+}
+nav .topbar .navs_buttons .item a{
     text-decoration: none;
     color: #2f3f86;
 }
 
 nav .topbar .navs_buttons .item.active {
-
     box-sizing: border-box;
     border-radius: 5px;
     font-weight: bold;
@@ -74,4 +75,13 @@ nav .topbar .navs_buttons .item.singup {
     color: white;
     box-sizing: border-box;
     border-radius: 5px;
+}
+nav .topbar .navs_buttons .item.singup a {
+    color: white;
+}
+
+@media (max-width: 1200px) {
+    nav .topbar .navs_buttons {
+        display: none;
+    }
 }
