@@ -6,11 +6,13 @@
 
 .code-container {
     position: relative;
+    
 
 }
 .code-container code {
     padding: 30px;
     font-size: 14px;
+    max-height: 400px;
 
 }
 
@@ -29,3 +31,25 @@ button {
 button:hover {
     background: #007bff;
 }
+
+/* scroll bar styles */
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #c8d6e7; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #42517e; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #1f154d; 
+  }

@@ -23,8 +23,8 @@ interface Links {
 export class SidebarNavComponent {
   links:Links = {
     "Payments": [
-      { name: "Link 1", href: "" },
-      { name: "Link 2", href: "" },
+      { name: "Google", href: "https://google.com" },
+      { name: "testpage", href: "/testpage" },
       { name: "Link 3", href: "" },
       { name: "Link 4", href: "" },
       { name: "Link 5", href: "" },

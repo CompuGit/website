@@ -77,5 +77,15 @@
             <h5 id="http_req">HTTP Request Data Structure</h5>
             <app-code-highlight [codeForHighlightAuto]="http_request" lang="json"></app-code-highlight>
         </div>
+
+
+        <mat-tab-group animationDuration="0ms" mat-stretch-tabs="false" mat-align-tabs="start">
+            <mat-tab label="Success">
+                <app-code-highlight [codeForHighlightAuto]="http_req_header"></app-code-highlight>
+            </mat-tab>
+            <mat-tab label="Failure">
+                <app-code-highlight [codeForHighlightAuto]="http_request" lang="json"></app-code-highlight>
+            </mat-tab>
+          </mat-tab-group>
     </div>
 </app-main>
